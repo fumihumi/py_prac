@@ -2,3 +2,8 @@
 *.png
 
 __pycache__/
+*.xlsx
+hait/*
+
+.ipynb*/
+.DS_Store
