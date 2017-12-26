@@ -4,6 +4,7 @@
 __pycache__/
 *.xlsx
 hait/*
+datasets/*
 
-.ipynb*/
+.ipynb_checkpoints/
 .DS_Store
