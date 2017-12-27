@@ -8,3 +8,4 @@ datasets/*
 
 .ipynb_checkpoints/
 .DS_Store
+machineLerning_memo/*.html
