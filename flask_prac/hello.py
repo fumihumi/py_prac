@@ -1,7 +1,9 @@
-import flask 
+# import flask, render_template
+from flask import Flask, render_template
+
 import urllib.request, json, requests
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -33,6 +35,12 @@ def zip2address(zipcode):
     r = requests.get(hostUrl, params = payload).text
     print(r)
     return r
+
+@app.route('/render/')
+def render():
+    students = {'takahashi': 'suguru takahashi', 'suzuki': 'takafumi suzuki'}
+    return render_template('layout.html', render_sample01='hoge_suzuki', render_sample02='huga', person = students)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
