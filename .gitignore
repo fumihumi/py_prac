@@ -3,7 +3,8 @@
 
 __pycache__/
 *.xlsx
-hait/*
+hait_docs/*
+!hait_docs/tasks/
 datasets/*
 
 .ipynb_checkpoints/
